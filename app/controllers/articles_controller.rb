@@ -1,12 +1,5 @@
 class ArticlesController < ApplicationController
 
-     
-    def index
-      articles = Article.all
-      render json: articles_response(articles)
-    end
-
-    
     def create
       article = Article.new(article_params)
       article.save
