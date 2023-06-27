@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
       render json: articles_response(article), status: :created
     end
   
-   
+
     def show
       article = Article.find_by(slug: params[:slug])
       if article
