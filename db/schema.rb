@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_16_122902) do
-  create_table "articles", force: :cascade do |t|
+ActiveRecord::Schema[7.0].define(version: 2023_06_15_125350) do
+  create_table "articles", charset: "utf8mb3", force: :cascade do |t|
+    t.string "slug"
     t.string "title"
     t.string "description"
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "slug"
   end
 
 end
