@@ -28,8 +28,8 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV['koshin'] %>
-  password: <%= ENV['kosinpass'] %>
+  username: koshin
+  password: kosinpass
   host: quest-infra-web-db.cwlbsudd7qdb.ap-northeast-1.rds.amazonaws.com
   database: real_world
 
