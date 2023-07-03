@@ -1,0 +1,16 @@
+current directory: /home/ec2-user/Real-World-API/vender/path/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+/home/ec2-user/.rbenv/versions/2.7.8/bin/ruby -I /home/ec2-user/.rbenv/versions/2.7.8/lib/ruby/2.7.0 -r ./siteconf20230629-9154-7qd6mx.rb extconf.rb
+creating Makefile
+
+current directory: /home/ec2-user/Real-World-API/vender/path/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR=" clean
+
+current directory: /home/ec2-user/Real-World-API/vender/path/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/ec2-user/Real-World-API/vender/path/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20230629-9154-7k0a9t/debug

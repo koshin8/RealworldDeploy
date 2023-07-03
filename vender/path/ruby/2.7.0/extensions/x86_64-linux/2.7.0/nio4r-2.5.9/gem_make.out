@@ -1,0 +1,31 @@
+current directory: /home/ec2-user/Real-World-API/vender/path/ruby/2.7.0/gems/nio4r-2.5.9/ext/nio4r
+/home/ec2-user/.rbenv/versions/2.7.8/bin/ruby -I /home/ec2-user/.rbenv/versions/2.7.8/lib/ruby/2.7.0 -r ./siteconf20230629-9154-5ydk6k.rb extconf.rb
+checking for unistd.h... yes
+checking for linux/aio_abi.h... yes
+checking for linux/io_uring.h... yes
+checking for sys/select.h... yes
+checking for port_event_t in poll.h... no
+checking for sys/epoll.h... yes
+checking for sys/event.h... no
+checking for port_event_t in port.h... no
+checking for sys/resource.h... yes
+creating Makefile
+
+current directory: /home/ec2-user/Real-World-API/vender/path/ruby/2.7.0/gems/nio4r-2.5.9/ext/nio4r
+make "DESTDIR=" clean
+
+current directory: /home/ec2-user/Real-World-API/vender/path/ruby/2.7.0/gems/nio4r-2.5.9/ext/nio4r
+make "DESTDIR="
+compiling bytebuffer.c
+compiling monitor.c
+compiling nio4r_ext.c
+In file included from nio4r_ext.c:6:0:
+../libev/ev.c:2136:31: 警告: ‘ev_default_loop_ptr’ が初期化され、 ‘extern’ として宣言されています
+   EV_API_DECL struct ev_loop *ev_default_loop_ptr = 0; /* needs to be initialised to make it a definition despite extern */
+                               ^~~~~~~~~~~~~~~~~~~
+compiling selector.c
+linking shared-object nio4r_ext.so
+
+current directory: /home/ec2-user/Real-World-API/vender/path/ruby/2.7.0/gems/nio4r-2.5.9/ext/nio4r
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20230629-9154-1goarf0
